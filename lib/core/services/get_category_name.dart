@@ -1,5 +1,5 @@
-import 'package:ecommerce/helper/api.dart';
-import 'package:ecommerce/model/product_model.dart';
+import 'package:ecommerce/data/model/product_model.dart';
+import 'package:ecommerce/core/helper/api.dart';
 
 class GetCategoryName {
   Future<List<ProductModel>> getCategoryName({required String category}) async {

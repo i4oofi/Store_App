@@ -1,4 +1,4 @@
-import 'package:ecommerce/helper/api.dart';
+import 'package:ecommerce/core/helper/api.dart';
 
 class GetAllCategories {
   Future<List<dynamic>> getCategories() async {
