@@ -1,6 +1,5 @@
 import 'package:ecommerce/controller/onBoard/on_board_cubit.dart';
 import 'package:ecommerce/controller/onBoard/on_board_state.dart';
-import 'package:ecommerce/core/constant/app_color.dart';
 import 'package:ecommerce/data/source/static/static.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -46,13 +45,8 @@ class CustomSlider extends StatelessWidget {
                     scale: 3.3,
                   ),
                   const SizedBox(height: 10),
-                  Text(
-                    onBoardList[index].title!,
-                    style: const TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
-                    ),
-                  ),
+                  Text(onBoardList[index].title!,
+                      style: Theme.of(context).textTheme.headlineMedium),
                   const SizedBox(height: 10),
                   Container(
                     width: double.infinity,
@@ -60,8 +54,7 @@ class CustomSlider extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(horizontal: 24),
                     child: Text(
                       onBoardList[index].body!,
-                      style:
-                          TextStyle(color: AppColor.black60Shade, height: 1.5),
+                      style: Theme.of(context).textTheme.bodyMedium,
                       textAlign: TextAlign.center,
                     ),
                   ),
